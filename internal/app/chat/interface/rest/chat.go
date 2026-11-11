@@ -26,6 +26,7 @@ func NewChatHandler(routerGroup fiber.Router, chatUsecase usecase.ChatUsecaseItf
 	handler := &ChatHandler{
 		chatUsecase: chatUsecase,
 	}
+	_ = handler
 
 	// =========================================================================
 	// TODO [Lab 1 - Task 1]: Daftarkan Route Group "/ws" & Endpoint Echo
